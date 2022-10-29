@@ -1,16 +1,9 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 const token = '5648242516:AAFqEc3U8uFS2EqVdtMDIzXokqt-3IcwTYU'
-const webAppUrl = 'https://ya.ru'
+const webAppUrl = 'https://snazzy-kringle-c73643.netlify.app/'
 const bot = new TelegramBot(token, {polling: true});
 
-
-// bot.onText(/\/echo (.+)/, (msg, match) => {
-//
-//   const chatId = msg.chat.id;
-//   const resp = match[1];
-//   bot.sendMessage(chatId, resp);
-// });
 
 bot.on('message', async (msg) => {
   const chatId = msg.chat.id;
