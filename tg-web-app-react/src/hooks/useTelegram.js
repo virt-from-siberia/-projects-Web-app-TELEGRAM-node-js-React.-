@@ -1,5 +1,3 @@
-import {isVisible} from "@testing-library/user-event/dist/utils";
-
 export function useTelegram() {
   const tg = window.Telegram.WebApp
 
@@ -7,7 +5,7 @@ export function useTelegram() {
       tg.close()
 
   const onToggleButton = () => {
-    if (tg.MainButton, isVisible)
+    if (tg.MainButton.isVisible)
       tg.MainButton.hide()
     else
       tg.MainButton.show()
