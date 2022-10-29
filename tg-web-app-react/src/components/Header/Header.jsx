@@ -1,20 +1,15 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Button} from "../Button/Button";
+import {useTelegram} from "../../hooks/useTelegram";
 
 
 export const Header = () => {
-  useEffect(() => {
-    tg.ready()
-  }, []);
-
-  const tg = window.Telegram.WebApp
-  const onClose = () =>
-      tg.close()
+  const {user, onClose} = useTelegram()
 
   return (
       <div className={'header'}>
         <Button onClick={onClose}>Закрыть</Button>
-        <span>{tg.initDataUnsafe?.user?.username}</span>
+        <span>{user?.username}</span>
       </div>
   );
 };
