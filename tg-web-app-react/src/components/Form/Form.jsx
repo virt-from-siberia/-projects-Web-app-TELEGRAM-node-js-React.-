@@ -20,6 +20,7 @@ export const Form = () => {
   useEffect(() => {
     if (!formData.street || !formData.country)
       tg.MainButton.hide()
+
     else
       tg.MainButton.show()
   }, [formData]);
