@@ -1,5 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 
+
 const token = '5648242516:AAFqEc3U8uFS2EqVdtMDIzXokqt-3IcwTYU'
 const webAppUrl = 'https://snazzy-kringle-c73643.netlify.app/'
 const bot = new TelegramBot(token, {polling: true});
@@ -35,7 +36,7 @@ bot.on('message', async (msg) => {
     })
   }
 
-  // bot.sendMessage(chatId, 'Received your message');
+  bot.sendMessage(chatId, 'Received your message');
 });
 
 
