@@ -17,12 +17,13 @@ function App() {
 
   return (
       <div className="App">
+        <Form/>
         <Header/>
         {/*<button onClick={onToggleButton}>toggle</button>*/}
-        <Routes>
-          <Route index element={<ProductList/>}/>
-          <Route path={'form'} element={<Form/>}/>
-        </Routes>
+        {/*<Routes>*/}
+        {/*  <Route index element={<ProductList/>}/>*/}
+        {/*  <Route path={'form'} element={<Form/>}/>*/}
+        {/*</Routes>*/}
         {/*Введите ваши данные*/}
       </div>
   );
