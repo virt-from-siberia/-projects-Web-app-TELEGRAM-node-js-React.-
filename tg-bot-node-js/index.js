@@ -25,6 +25,14 @@ bot.on('message', async (msg) => {
         ]
       }
     })
+
+    await bot.sendMessage(chatId, 'Заполникте форму', {
+      reply_markup: {
+        inline_keyboard: [
+          [{text: 'Сделать заказ', web_app: {url: webAppUrl + '/form'}}]
+        ]
+      }
+    })
   }
 
   // bot.sendMessage(chatId, 'Received your message');
