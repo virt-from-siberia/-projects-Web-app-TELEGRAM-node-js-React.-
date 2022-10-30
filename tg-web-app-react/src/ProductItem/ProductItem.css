@@ -1,0 +1,22 @@
+.product {
+    display: flex;
+    flex-display: column;
+    botrder: 1px solid var(--tg-theme-button-color);
+    padding: 15px;
+}
+
+.img {
+    width: 100%;
+    background: lightgray;
+    height: 100%;
+    margin: 0 auto;
+    background: var(--tg-theme-button-color);
+}
+
+.description {
+    font-size: 0.8em;
+}
+
+.add-btn {
+    width: 100%;
+}
